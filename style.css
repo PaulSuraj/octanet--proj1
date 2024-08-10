@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width:100%;
+    min-height: 100vh;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://coohom-biz-sg-s3.coohom.com/ins/static/signup/en_US_second.png?x-oss-process=image/resize,m_fill,w_1152,h_827/format,webp);
+}
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+.text .image{
+    background-image: url(https://www.wildnatureimages.com/images/960/070620-014-The-Tetons.webp);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 220px;
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.rtext p{
+    font-size: 12px;
+
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+
+}
+.b1{
+width: 30%;
+min-height: inherit;
+background-image: url(https://media.istockphoto.com/id/2128484831/photo/modern-city-traffic-at-night.jpg?s=1024x1024&w=is&k=20&c=D1z-KLAqaVBZrC5d5_5oI2sYaMle68xCKNRH-9fc2rU=);
+background-position: center;
+background-size: cover;
+}
+.b1 h1{
+  
+    text-align: center;
+   color: #ffffff;
+    padding: 30px;
+}
+.b1 p{
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://media.istockphoto.com/id/2128484831/photo/modern-city-traffic-at-night.jpg?s=1024x1024&w=is&k=20&c=D1z-KLAqaVBZrC5d5_5oI2sYaMle68xCKNRH-9fc2rU=);
+    background-position: center;
+background-size: cover;
+
+}
+.b2 .up h1{
+    color: wheat;
+text-align: center;
+padding: 30px;
+}
+.b2 .up p{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+/* image not incide  */
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dcity&psig=AOvVaw1LLG--qWseVXC2lHN-hXUX&ust=1723405519512000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLC5m4KY64cDFQAAAAAdAAAAABAE);
+    background-position: center;
+    background-size: cover;
+
+}
+.b3{
+    color: whitesmoke;
+width: 40%;
+min-height: inherit;
+background-image: url(https://media.istockphoto.com/id/2128484831/photo/modern-city-traffic-at-night.jpg?s=1024x1024&w=is&k=20&c=D1z-KLAqaVBZrC5d5_5oI2sYaMle68xCKNRH-9fc2rU=);
+background-position: center;
+background-size: cover;
+
+
+}
+.b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: #f5f5f5;
+
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 3vh;
+}
+.b3 .overlay p{
+    padding: 1.2vh;
+}
+@media (max-width:700px) {
+    .rtext{
+        flex-direction: column;
+         
+
+    }
+    .b3 .overlay{
+        width: 200%;
+        margin-left:initial ;
+    }
+}
+@media (max-width:500px) {
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+
+    }
+    .text .image{
+        height: 200px;
+        height: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .rtext p{
+        margin: 10px;
+
+    }
+    .icon{
+        margin: 10px;
+
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+
+    }
+    .b2{
+        width: 100%;
+        
+    }
+    .b3{
+        width: 100%;
+        
+    }
+    .b2 .up{
+        min-height: 30vh;
+
+    }
+    .b3{
+        width: 100%;
+        background-position: left;
+        min-height: 30vh;
+    }
+}
